@@ -7,10 +7,10 @@
     <style>
       body {
         margin-left: 20px;
-        font-family: "Lucida Console", "Courier New", monospace;
+        font-family: "Times New Roman", Times, serif;
       }
       h2 {
-        font-family: "Lucida Console", "Courier New", monospace;
+        font-family: Arial, Helvetica, sans-serif;
         margin-left: 100px;
       }
       p {
@@ -27,6 +27,7 @@
         margin-right: auto;
         margin-top: 100px;
         box-shadow: 5px 5px #888888;
+        background-color: aliceblue;
       }
       label {
         margin-left: 20px;
@@ -37,12 +38,12 @@
       input {
         margin: 10px 10px 10px;
         position: relative;
-        width: 475px;
+        width: 300px;
         height: 30px;
       }
       button {
         margin-left: 10px;
-        width: 485px;
+        width: 100px;
         text-align: center;
         background-color: green;
         text-decoration-color: cadetblue;
@@ -59,17 +60,26 @@
       <h2>BMI CALCULATOR</h2>
 
       <p>Enter the Height and weight</p>
-      <label>Height</label>
-      <br />
-      <input type="number" />
-      <br />
-      <label>Weight</label>
-      <br />
-      <input type="number" />
-      <br />
-      <button>Calculate</button>
-      <p>BMI</p>
-      <input type="number" />
+      <table>
+        <tr>
+          <td><label>Height</label></td>
+          <td> <input type="number" /></td>
+        </tr>
+        <tr>
+          <td><label>Weight</label>  </td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button>Calculate</button>
+          </td>
+          
+        </tr>
+        <tr>
+          <td><label>BMI</label>  </td>
+          <td><input type="number" /></td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
